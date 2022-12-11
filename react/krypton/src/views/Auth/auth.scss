@@ -1,0 +1,35 @@
+/*Profile Pic Start*/
+.picture-container{
+    position: relative;
+    text-align: center;
+    .picture{
+        width: 150px;
+        height: 150px;
+        background-color: #999999;
+        border: 4px solid #CCCCCC;
+        color: #FFFFFF;
+        border-radius: 50%;
+        margin: 0px auto;
+        overflow: hidden;
+        transition: all 0.2s;
+        -webkit-transition: all 0.2s;
+        &:hover{
+            border-color: #4FD1C5;
+        }
+        .picture-src{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        input[type="file"] {
+            cursor: pointer;
+            display: block;
+            width: 150px;
+            height: 150px;
+            opacity: 0 !important;
+            position: absolute;
+            top: 0;
+        }
+    }    
+}
